@@ -44,9 +44,9 @@ namespace CodeFirst
         {
             // метод UseLazyLoadingProxies() делает доступной ленивую загрузку.
             // optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=DESKTOP-G30VB0K\MSSQLSERVER01;Database=AcademyGroupDB;Integrated Security=SSPI;TrustServerCertificate=true");
-            // optionsBuilder.UseLazyLoadingProxies().UseSqlite("Data Source=AcademyGroup.db");
-            optionsBuilder.UseLazyLoadingProxies().UseMySql("server=localhost;user=root;password=;database=AcademyGroupDB;",
-            new MySqlServerVersion(new System.Version(10, 4, 27))); // SELECT VERSION(); команда получения версии в среде MySQL Workbench
+            optionsBuilder.UseLazyLoadingProxies().UseSqlite("Data Source=AcademyGroup.db");
+            //optionsBuilder.UseLazyLoadingProxies().UseMySql("server=localhost;user=root;password=;database=AcademyGroupDB;",
+            //new MySqlServerVersion(new System.Version(10, 4, 27))); // SELECT VERSION(); команда получения версии в среде MySQL Workbench
         }
     }
 }
